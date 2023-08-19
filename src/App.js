@@ -10,12 +10,13 @@ const [add,setAdd]=useState(0);
 
 const calcySum =(e)=>{
 e.preventDefault() 
-if (num1===0 || num2===0 || num3===0) {
+
+if (num1==="" || num2==="" || num3==="") {
   alert("Please enter the correct Values")
 }
 else{
   let add=parseInt(num1)*parseInt(num2)*parseInt(num3)/100;
-  console.log(add);
+  
 setAdd(parseInt(add))
 }
 }
